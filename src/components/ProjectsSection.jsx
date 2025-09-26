@@ -79,7 +79,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section className="container -mt-40 relative overflow-hidden" id="Work">
+    <section className="container -mt-40 relative overflow-hidden" id="work">
       {/* Project Grid Section */}
       <div id="project-grid" className="relative px-4 md:px-8 ">
         <div className='py-4'>
