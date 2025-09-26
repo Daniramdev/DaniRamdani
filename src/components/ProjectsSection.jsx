@@ -79,7 +79,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section className="container -mt-40 relative overflow-hidden" id="project">
+    <section className="container -mt-40 relative overflow-hidden" id="Work">
       {/* Project Grid Section */}
       <div id="project-grid" className="relative px-4 md:px-8 ">
         <div className='py-4'>
@@ -90,7 +90,7 @@ const ProjectsSection = () => {
             className="text-center"
           >
             <h1 className="text-5xl md:text-7xl font-medium text-black/80 mb-4">
-              <ParallaxReveal paragraph="PROJECTS"/>
+              <ParallaxReveal paragraph="Work"/>
             </h1>
             <p className="text-lg text-black/50 mb-6 max-w-2xl mx-auto">
               <ParallaxReveal paragraph="These projects highlight my expertise in building seamless, end-to-end applications. Select a project to explore its details."/>
