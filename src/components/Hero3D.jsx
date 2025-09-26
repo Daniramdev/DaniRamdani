@@ -60,12 +60,11 @@ const HeroSection = () => {
       </div>
 
       <div className="md:col-span-1 lg:col-span-1 flex justify-center z-10 relative"></div>
-
-      <div className="md:col-span-1 lg:col-span-1 flex justify-end items-start mt-4 md:mt-0 z-10">
-        <div className="absolute md:bottom-16 bottom-16 right-6 text-right text-start text-black/50 font-medium">
-          <p className="text-sm "><ParallaxReveal paragraph="Simplifying and Humanizing"/> <br /> <ParallaxReveal paragraph="The Bridge Between Ideas and Reality."/></p>
-        </div>
-      </div>
+<div className="md:col-span-1 lg:col-span-1 flex justify-end items-start mt-4 md:mt-0 z-10">
+  <div className="absolute md:bottom-16 bottom-16 md:right-6 text-right text-start text-black/50 font-medium max-w-60">
+    <p className="text-xs"><ParallaxReveal paragraph="Simplifying and Humanizing"/> <br /> <ParallaxReveal paragraph="The Bridge Between Ideas and Reality."/></p>
+  </div>
+</div>
 
       {/* 'Scroll to Top' button */}
       {showButton && (

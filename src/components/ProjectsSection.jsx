@@ -149,104 +149,104 @@ const ProjectsSection = () => {
         </div>
       </div>
 
-      {/* Project Detail Modal */}
-      <AnimatePresence>
-        {isModalOpen && selectedProject && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/20 backdrop-blur-md"
+   <AnimatePresence>
+  {isModalOpen && selectedProject && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/20 backdrop-blur-md"
+      onClick={closeProjectModal}
+    >
+      <motion.div
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.9, opacity: 0 }}
+        transition={{ type: "spring", damping: 20 }}
+        className="bg-black/50 rounded-xl overflow-y-auto max-w-4xl w-full max-h-[90vh] border border-black/80/30 hide-scrollbar"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Modal Header */}
+        <div className="relative">
+          <div className="h-64 md:h-80 overflow-hidden">
+            <img 
+              src={selectedProject.image} 
+              alt={selectedProject.title}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          
+          <button 
+            // PERBAIKAN: Menambahkan z-50 dan p-3 untuk meningkatkan area klik di mobile
+            className="absolute top-4 right-4 z-50 bg-gray-900/80 text-white p-3 rounded-full hover:bg-red-500 transition-colors"
             onClick={closeProjectModal}
           >
-            <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ type: "spring", damping: 20 }}
-              className="bg-black/50 rounded-xl overflow-y-auto max-w-4xl w-full max-h-[90vh] border border-black/80/30 hide-scrollbar"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Modal Header */}
-              <div className="relative">
-                <div className="h-64 md:h-80 overflow-hidden">
-                  <img 
-                    src={selectedProject.image} 
-                    alt={selectedProject.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                
-                <button 
-                  className="absolute top-4 right-4 bg-gray-900/80 text-white p-2 rounded-full hover:bg-red-500 transition-colors"
-                  onClick={closeProjectModal}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-                
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900 to-transparent p-6 pt-16">
-                  <h2 className="text-3xl font-bold text-white">{selectedProject.title}</h2>
-                  <p className="text-white mt-2">{selectedProject.desc}</p>
-                </div>
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-900 to-transparent p-6 pt-16">
+            <h2 className="text-3xl font-bold text-white">{selectedProject.title}</h2>
+            <p className="text-white mt-2">{selectedProject.desc}</p>
+          </div>
+        </div>
+        
+        {/* Modal Body... (bagian ini tidak diubah) */}
+        <div className="p-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="md:col-span-2">
+              <h3 className="text-xl font-bold text-white mb-4">Project Overview</h3>
+              <p className="text-white leading-relaxed">{selectedProject.fullDesc}</p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-bold text-white mb-4">Technologies</h3>
+              <div className="flex flex-wrap gap-2">
+                {selectedProject.tech.map((tech, i) => (
+                  <span 
+                    key={i} 
+                    className="px-3 py-1.5 rounded-full text-sm font-medium text-white" 
+                    style={{ backgroundColor: selectedProject.color }}
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
-              
-              {/* Modal Body */}
-              <div className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                  <div className="md:col-span-2">
-                    <h3 className="text-xl font-bold text-white mb-4">Project Overview</h3>
-                    <p className="text-white leading-relaxed">{selectedProject.fullDesc}</p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-4">Technologies</h3>
-                    <div className="flex flex-wrap gap-2">
-                      {selectedProject.tech.map((tech, i) => (
-                        <span 
-                          key={i} 
-                          className="px-3 py-1.5 rounded-full text-sm font-medium text-white" 
-                          style={{ backgroundColor: selectedProject.color }}
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                
-                <h3 className="text-xl font-bold text-white mb-4">Key Features</h3>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
-                  {selectedProject.details.map((detail, i) => (
-                    <li key={i} className="flex items-start">
-                      <span className="text-gray-500 mr-2">■</span>
-                      <span className="text-white">{detail}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                <div className="flex justify-between items-center pt-6 border-t border-black/50">
-                  <button onClick={handleLiveDemoClick} className="px-6 py-2 rounded-full bg-black/50 text-white hover:bg-gray-700 transition-colors">
-                    View Live Demo
-                  </button>
-                  {selectedProject.id === 'p-inti' && (
-                    <a 
-                      href="LINK_GOOGLE_DRIVE_ANDA_DI_SINI" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="px-6 py-2 rounded-full text-white flex items-center" 
-                      style={{ backgroundColor: selectedProject.color }}
-                    >
-                      Sertifikat
-                    </a>
-                  )}
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+            </div>
+          </div>
+          
+          <h3 className="text-xl font-bold text-white mb-4">Key Features</h3>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
+            {selectedProject.details.map((detail, i) => (
+              <li key={i} className="flex items-start">
+                <span className="text-gray-500 mr-2">■</span>
+                <span className="text-white">{detail}</span>
+              </li>
+            ))}
+          </ul>
+          
+          <div className="flex justify-between items-center pt-6 border-t border-black/50">
+            <button onClick={handleLiveDemoClick} className="px-6 py-2 rounded-full bg-black/50 text-white hover:bg-gray-700 transition-colors">
+              View Live Demo
+            </button>
+            {selectedProject.id === 'p-inti' && (
+              <a 
+                href="LINK_GOOGLE_DRIVE_ANDA_DI_SINI" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="px-6 py-2 rounded-full text-white flex items-center" 
+                style={{ backgroundColor: selectedProject.color }}
+              >
+                Sertifikat
+              </a>
+            )}
+          </div>
+        </div>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
     </section>
   );
 };

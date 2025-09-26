@@ -97,7 +97,7 @@ const AboutSection = () => {
         },
     ];
 
-    const introParagraph = "Alumni Universitas Islam Nusantara dengan gelar Sarjana (S.T) sebagai Fullstack Developer dengan pengalaman lebih dari 2 tahun, saya bersemangat berkolaborasi dengan tim untuk mendapatkan inovasi dan memberikan solusi yang efektif.";
+    const introParagraph = "Sebagai Fullstack Developer dengan pengalaman lebih dari 2 tahun, saya bersemangat berkolaborasi dengan tim untuk mendapatkan inovasi dan memberikan solusi yang efektif.";
 
     return (
         <div
