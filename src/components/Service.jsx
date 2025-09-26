@@ -20,7 +20,7 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <div className="container p-5 md:p-10 -mt-[160vh] mb-80">
+    <div className="container p-5 md:p-10 -mt-[80vh] mb-80">
       <h1 className="text-4xl md:text-5xl font-bold mb-10 text-black/80">
         I can help you with
       </h1>
