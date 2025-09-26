@@ -102,7 +102,7 @@ const AboutSection = () => {
     return (
         <div
             ref={sectionRef}
-            className="md:h-[260vh] h-[240vh]"
+            className="md:h-[260vh] h-[180vh]"
             id="about"
             style={{
                 clipPath: clipPathValue,
