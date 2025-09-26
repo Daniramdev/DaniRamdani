@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "tailwindcss";
+/* Ganti font di seluruh section hero */
+/* Atau jika ingin font berbeda untuk elemen tertentu */
+
+
+/* Base Body Font */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #DADBDF;
+  
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* src/animations.css */
+
+.circle-text-container {
+  /* This is the main container for the circular text */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-text-spin {
+  /* This div will handle the continuous rotation of the entire circle of text */
+  animation: spin 10s linear infinite;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-text-spin span {
+  /* Each letter is a span */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50%; /* Radius of the circle */
+  transform-origin: bottom center; /* Pivot point at the bottom of the span */
+  font-size: 0.6rem; /* Adjust font size to fit */
+  color: white;
+  font-family: sans-serif;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
