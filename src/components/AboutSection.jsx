@@ -71,7 +71,7 @@ const AboutSection = () => {
 
     const accordionItems = [
         {
-            title: 'Pengalaman',
+            title: 'Experience',
             content: (
                 <p className="text-md font-medium text-justify">
                   Full-stack Web Developer with experience in the state-owned enterprise (PT. INTI and PLN iConnect), proficient in the Python (Flask) and PHP (Laravel & CodeIgniter) ecosystems. My expertise spans the entire development lifecycle, from designing RESTful APIs to implementing interactive statistical data visualizations and LDAP-based authentication systems. I'm accustomed to working with large-scale databases, focusing on performance and security optimization, and building modern user interfaces with Tailwind CSS for an optimal experience.
@@ -82,22 +82,21 @@ const AboutSection = () => {
             title: 'Skill',
             content: (
                 <>
-                    <p><strong className="font-bold">Framework:</strong> Python (Flask), PHP (CodeIgniter, Laravel), Javascripts</p>
-                    <p><strong className="font-bold">Basis Data:</strong> MySQL, PostgreSQL (Optimasi Query)</p>
-                    <p><strong className="font-bold">Desain & UI:</strong> Tailwind CSS, Bootstrap, Figma</p>
-                    <p><strong className="font-bold">Arsitektur & Metodologi:</strong> RESTful API, OOP, CRUD, RBAC, LDAP</p>
-                    <p><strong className="font-bold">Version Control:</strong> Git (GitHub)</p>
-                    <p><strong className="font-bold">Deployment & DevOps:</strong> Docker</p>
+                    <p><strong className='font-bold'>Back-End:</strong> Python (Flask), PHP (CodeIgniter)</p>
+<p><strong className='font-bold'>Basis Data:</strong> MySQL, PostgreSQL (Optimasi query)</p>
+<p><strong className='font-bold'>Front-End & UI/UX:</strong> Tailwind CSS, Bootstrap</p>
+<p><strong className='font-bold'>Arsitektur & API:</strong> RESTful API, JWT, LDAP</p>
+<p><strong className='font-bold'>Tools & Lainnya:</strong> GitHub, Vercel, Niagahosting</p>
                 </>
             ),
         },
         {
-            title: 'Hobi',
+            title: 'Hobby',
             content: <p className="text-md font-medium">Playing futsal and listening to music.</p>,
         },
     ];
 
-    const introParagraph = "Sebagai Fullstack Developer dengan pengalaman lebih dari 2 tahun, saya bersemangat berkolaborasi dengan tim untuk mendapatkan inovasi dan memberikan solusi yang efektif.";
+    const introParagraph = "As a Fullstack Developer with over 2 years of experience, I am passionate about collaborating with teams to innovate and deliver effective solutions.";
 
     return (
         <div
