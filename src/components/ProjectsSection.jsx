@@ -23,6 +23,7 @@ const ProjectsSection = () => {
   "fullDesc": "Full-stack developer with over 2 years of experience, focused on building data-driven solutions and high-performance web applications. Proficient in Python Flask and PHP CodeIgniter, and proven expertise in RESTful API integration and responsive design using atomic design methodology. I have a proven track record of optimizing performance and implementing robust security, resulting in operational efficiency improvements of up to 80% and uptime efficiency of 30%.",
   "tech": [
     "Flask",
+    "Html",
     "Tailwind CSS",
     "MySQL",
     "Highcharts",
