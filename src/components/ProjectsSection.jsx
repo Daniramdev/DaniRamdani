@@ -20,7 +20,7 @@ const ProjectsSection = () => {
   "id": "p-pln",
   "title": "PT. PLN Data Management System",
   "desc": "A full-stack application for data management that improves workflow efficiency.",
-  "fullDesc": "Data Management Application Development: Fully responsible for developing efficient and responsive data management applications, from the back-end (Python Flask) to the front-end (Tailwind CSS).API and Database Implementation: Designing and implementing RESTful APIs to ensure efficient data flow and optimizing MySQL queries to improve application performance.System Security: Implementing secure, multi-level underlying systems, such as Role-Based Access Control (RBAC) and JSON Web Tokens (JWT), to protect user data.Data Visualization: Transforming complex data into visualizations using over 26 interactive charts (Highcharts) to support faster decision-making.",
+  "fullDesc": "Fully responsible for the development of efficient and responsive data management applications, from back-end (Python Flask) to front-end (Tailwind CSS). API and Database Implementation Design and implement RESTful APIs to ensure efficient data flow and optimize MySQL queries to improve application performance. System Security Implement secure multi-level underlying systems, such as Role-Based Access Control (RBAC) and JSON Web Tokens (JWT), to protect user data. Data Visualization Transform complex data into visualizations using over 26 interactive charts (Highcharts) to support faster decision-making",
   "tech": [
     "Flask",
     "Html",
