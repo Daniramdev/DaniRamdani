@@ -24,7 +24,7 @@ const FooterSession = () => {
           <div>
             <h3 className="text-xl font-bold mb-2">Kontak</h3>
             <div className="flex flex-col space-y-1 text-sm gap-2">
-              <a href="https://drive.google.com/file/d/1_UOHFTPSpkwtn_nOUtSNGv7vC18AzJgm/view?usp=drive_link" className="hover:text-black transition">Baca.CV</a>
+              <a href="https://drive.google.com/file/d/1_UOHFTPSpkwtn_nOUtSNGv7vC18AzJgm/view?usp=drive_link" className="hover:text-black transition">Read.CV</a>
               <a href="mailto:danird1240@gmail.com" className="hover:text-black transition">Email</a>
               <a href="#" className="hover:text-black transition">+62 881-0128-04615</a>
             </div>
@@ -39,7 +39,7 @@ const FooterSession = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-2">Lokasi</h3>
+            <h3 className="text-xl font-bold mb-2">Location</h3>
             <div className="flex flex-col space-y-1 text-sm gap-2">
               <p>📍 Bandung, Majalaya</p>
             </div>

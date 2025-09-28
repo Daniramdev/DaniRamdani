@@ -11,7 +11,7 @@ const Navbar = () => {
   const navItems = [
     { id: 'about', label: 'About', href: '#about' },
     { id: 'work', label: 'Work', href: '#work' },
-    { id: 'cv', label: 'CV', href: 'https://drive.google.com/file/d/1_UOHFTPSpkwtn_nOUtSNGv7vC18AzJgm/view?usp=drive_link' }
+    { id: 'cv', label: 'CV', href: 'https://drive.google.com/file/d/1ETx9qy0eFh9eWXKYiXEkVjhvBF0_732i/view?usp=drive_link' }
   ];
 
  

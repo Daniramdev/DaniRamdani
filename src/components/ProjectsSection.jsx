@@ -18,9 +18,9 @@ const ProjectsSection = () => {
   const projects = [
   {
   "id": "p-pln",
-  "title": "Aplikasi Manajemen Data PT. PLN",
-  "desc": "Aplikasi full-stack untuk manajemen data yang meningkatkan efisiensi alur kerja.",
-  "fullDesc": "Sebagai Full-stack Web Developer, saya bertanggung jawab penuh atas pengembangan aplikasi web manajemen data dari tahap konseptual hingga implementasi. Aplikasi ini menggunakan framework Flask untuk back-end dan Tailwind CSS untuk antarmuka pengguna. Saya merancang arsitektur sistem, mengembangkan fitur-fitur kunci, dan mengoptimalkan performa untuk memastikan aplikasi berjalan dengan lancar dan aman.",
+  "title": "PT. PLN Data Management Application",
+  "desc": "A full-stack application for data management that improves workflow efficiency.",
+  "fullDesc": "Full-stack developer with over 2 years of experience, focused on building data-driven solutions and high-performance web applications. Proficient in Python Flask and PHP CodeIgniter, and proven expertise in RESTful API integration and responsive design using atomic design methodology. I have a proven track record of optimizing performance and implementing robust security, resulting in operational efficiency improvements of up to 80% and uptime efficiency of 30%.",
   "tech": [
     "Flask",
     "Tailwind CSS",
@@ -31,17 +31,17 @@ const ProjectsSection = () => {
   "color": "#0066cc",
   "image": "/pln.jpg",
   "details": [
-    "Peningkatan efisiensi kerja sebesar 30%",
-    "Peningkatan kecepatan render 25% melalui optimasi query",
-    "Sistem otentikasi Role-Based Access Control (RBAC)",
-    "Implementasi fitur CRUD dan filter pencarian lanjutan",
-    "Mengoptimasi performa aplikasi dengan mengembangkan 26+ grafik interaktif (Highcharts) danmengoptimasi query MySQL, yang menghasilkanpeningkatan kecepatan render sebesar 25%"
+    "Built an efficient data management application using Python Flask with a responsive design using Tailwind CSS.This application successfully increased team efficiency by 30%.The application is supported by a RESTful API that ensures efficient data flow, as well as intuitive CRUD and search filter features.",
+    "Designed and implemented a secure multi-level authentication system (RBAC and JWT) to ensure the integrity and confidentiality of user data.",
+    "Translated complex data into easy-to-understand visualizations using over 26 interactive charts (Highcharts). The interface was intuitively and responsively designed to facilitate faster data-driven decision-making",
+    "Optimized performance by designing efficient input-output data flows to handle large data volumes.This strategy, combined with MySQL query optimization,successfully increased rendering speed by up to 25%.",
+    
   ]
 }, 
    {
   "id": "p-inti",
-  "title": "Sistem Manajemen Kontrak PT. INTI",
-  "desc": "Aplikasi web untuk manajemen kontrak properti yang meningkatkan efisiensi alur kerja.",
+  "title": "PT. INTI Contract Management System",
+  "desc": "A web application for property contract management that improves workflow efficiency.",
   "fullDesc": "Sebagai Full-stack Web Developer, saya bertanggung jawab dalam mengembangkan sistem manajemen kontrak properti berbasis web. Aplikasi ini dibangun menggunakan framework CodeIgniter. Fitur-fitur utamanya mencakup otentikasi LDAP untuk login terpusat, fitur CRUD untuk pengelolaan data yang efisien, dan notifikasi email otomatis untuk pelaporan real-time, yang secara keseluruhan meningkatkan efisiensi dokumentasi dan pengelolaan aset.",
   "tech": [
     "CodeIgniter",
@@ -54,10 +54,11 @@ const ProjectsSection = () => {
   "color": "#e07d0f",
   "image": "/ptinti1.jpg",
   "details": [
-    "Otentikasi LDAP untuk login terpusat",
-    "Notifikasi email otomatis untuk pelaporan real-time",
-    "Pengelolaan aset dan dokumentasi yang efisien",
-    "Implementasi fitur CRUD dan filter pencarian lanjutan"
+    "Designed and built a property contract management system using the CodeIgniter framework, significantly improving documentation and asset management efficiency.",
+    "Implemented LDAP authentication to provide a centralized and secure login system, strengthening the company's data security posture.",
+    "Implemented CRUD features and advanced search filters, simplifying data tracking and workflows.",
+    "Employed techniques such as pagination, lazy loading, and asynchronous processing to manage large amounts of data, ensuring a seamless user experience without compromising performance.",
+    "Designed and implemented an optimal data input-output (I/O) workflow, minimizing loading times and latency when processing and displaying data.",
   ]
 }
   ];
@@ -75,7 +76,7 @@ const ProjectsSection = () => {
   };
 
   const handleLiveDemoClick = () => {
-    alert('Proyek ini bersifat internal dan dikembangkan khusus untuk pengelolaan data perusahaan, sehingga tidak dapat ditampilkan atau diakses publik demi menjaga kerahasiaan dan keamanan data');
+    alert('This project is internal and developed specifically for corporate data management, so it cannot be displayed or accessed by the public to maintain data confidentiality and security.');
   };
 
   return (
@@ -232,7 +233,7 @@ const ProjectsSection = () => {
             </button>
             {selectedProject.id === 'p-inti' && (
               <a 
-                href="LINK_GOOGLE_DRIVE_ANDA_DI_SINI" 
+                href="https://drive.google.com/file/d/13xCcMSZy2fSnfvdN72qV-1vEIPT8dkYv/view?usp=drive_link" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="px-6 py-2 rounded-full text-white flex items-center" 

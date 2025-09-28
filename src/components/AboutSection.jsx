@@ -74,7 +74,7 @@ const AboutSection = () => {
             title: 'Pengalaman',
             content: (
                 <p className="text-md font-medium text-justify">
-                    Full-stack Web Developer dengan pengalaman di industri BUMN (PT. INTI dan PLN iConnect), mahir dalam ekosistem Python (Flask) dan PHP (Laravel & CodeIgniter). Keahlian saya mencakup seluruh siklus pengembangan, dari perancangan API RESTful hingga implementasi visualisasi data interaktif statistik dan sistem autentikasi berbasis LDAP. Saya terbiasa bekerja dengan database skala besar, berfokus pada optimasi performa dan keamanan, serta membangun antarmuka pengguna yang modern dengan Tailwind CSS untuk pengalaman yang optimal.
+                  Full-stack Web Developer with experience in the state-owned enterprise (PT. INTI and PLN iConnect), proficient in the Python (Flask) and PHP (Laravel & CodeIgniter) ecosystems. My expertise spans the entire development lifecycle, from designing RESTful APIs to implementing interactive statistical data visualizations and LDAP-based authentication systems. I'm accustomed to working with large-scale databases, focusing on performance and security optimization, and building modern user interfaces with Tailwind CSS for an optimal experience.
                 </p>
             ),
         },
@@ -82,7 +82,7 @@ const AboutSection = () => {
             title: 'Skill',
             content: (
                 <>
-                    <p><strong className="font-bold">Bahasa & Framework:</strong> Python (Flask), PHP (CodeIgniter, Laravel), Javascripts</p>
+                    <p><strong className="font-bold">Framework:</strong> Python (Flask), PHP (CodeIgniter, Laravel), Javascripts</p>
                     <p><strong className="font-bold">Basis Data:</strong> MySQL, PostgreSQL (Optimasi Query)</p>
                     <p><strong className="font-bold">Desain & UI:</strong> Tailwind CSS, Bootstrap, Figma</p>
                     <p><strong className="font-bold">Arsitektur & Metodologi:</strong> RESTful API, OOP, CRUD, RBAC, LDAP</p>
@@ -93,7 +93,7 @@ const AboutSection = () => {
         },
         {
             title: 'Hobi',
-            content: <p className="text-md font-medium">Bermain futsal dan mendengarkan musik.</p>,
+            content: <p className="text-md font-medium">Playing futsal and listening to music.</p>,
         },
     ];
 
