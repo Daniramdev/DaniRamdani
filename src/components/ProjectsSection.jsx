@@ -18,9 +18,9 @@ const ProjectsSection = () => {
   const projects = [
   {
   "id": "p-pln",
-  "title": "PT. PLN Data Management Application",
+  "title": "PT. PLN Data Management System",
   "desc": "A full-stack application for data management that improves workflow efficiency.",
-  "fullDesc": "Full-stack developer with over 2 years of experience, focused on building data-driven solutions and high-performance web applications. Proficient in Python Flask and PHP CodeIgniter, and proven expertise in RESTful API integration and responsive design using atomic design methodology. I have a proven track record of optimizing performance and implementing robust security, resulting in operational efficiency improvements of up to 80% and uptime efficiency of 30%.",
+  "fullDesc": "Data Management Application Development: Fully responsible for developing efficient and responsive data management applications, from the back-end (Python Flask) to the front-end (Tailwind CSS).API and Database Implementation: Designing and implementing RESTful APIs to ensure efficient data flow and optimizing MySQL queries to improve application performance.System Security: Implementing secure, multi-level underlying systems, such as Role-Based Access Control (RBAC) and JSON Web Tokens (JWT), to protect user data.Data Visualization: Transforming complex data into visualizations using over 26 interactive charts (Highcharts) to support faster decision-making.",
   "tech": [
     "Flask",
     "Html",
@@ -43,7 +43,7 @@ const ProjectsSection = () => {
   "id": "p-inti",
   "title": "PT. INTI Contract Management System",
   "desc": "A web application for property contract management that improves workflow efficiency.",
-  "fullDesc": "Sebagai Full-stack Web Developer, saya bertanggung jawab dalam mengembangkan sistem manajemen kontrak properti berbasis web. Aplikasi ini dibangun menggunakan framework CodeIgniter. Fitur-fitur utamanya mencakup otentikasi LDAP untuk login terpusat, fitur CRUD untuk pengelolaan data yang efisien, dan notifikasi email otomatis untuk pelaporan real-time, yang secara keseluruhan meningkatkan efisiensi dokumentasi dan pengelolaan aset.",
+  "fullDesc": "Responsible for the design and implementation of a property contract management system, from back-end to front-end, using CodeIgniter.Security and Authentication: Integrating an LDAP system to provide a centralized and secure login feature, enhancing the security of company data.Data Management: Developing CRUD features and advanced search filters to facilitate data tracking and workflow.Performance Optimization: Implementing various techniques (pagination, lazy loading, asynchronous processing, and I/O flow optimization) to manage large amounts of data and ensure smooth application performance.",
   "tech": [
     "CodeIgniter",
     "PHP",
