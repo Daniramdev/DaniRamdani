@@ -48,7 +48,7 @@ const HeroSection = () => {
       
       {/* Gambar Hero dengan clip-path */}
    <div
-    className="absolute z-10 inset-0 bg-cover w-full h-[100%] md:w-[50%] md:left-[25%]"
+    className="absolute z-10 inset-0 bg-cover w-full  h-[100%] md:w-[50%] md:left-[25%]"
     style={{
       backgroundImage: `url(${heroImage})`,
       backgroundPosition: 'center 4%',
@@ -71,14 +71,14 @@ const HeroSection = () => {
      
       
    <div className='relative h-[100%] px-20'>
-        <div className='absolute md:left-[55%] left-[60%] z-20  md:bottom-[15rem] bottom-[20rem]'> 
+        <div className='absolute md:left-[55%] left-[60%] z-20  md:bottom-[15rem] bottom-[26rem]'> 
           <img src="/arrow.svg" alt="" className=' h-10 md:h-16' />
         </div>
-    <div className='absolute inset-x-0 bottom-20 flex justify-between md:px-[100px]  z-20 text-justify px-4'>
+    <div className='absolute inset-x-0 bottom-24 flex justify-between md:px-[100px]  z-20 text-justify px-4'>
      <div className='md:w-[60vh] w-[40vh] text-xs'>
           <h1>I am ready to collaborate in designing and developing together to provide the best, modern, responsive and in accordance with the challenges of the times to meet your needs.</h1>
         </div>
-        <div className='w-[30vh] md:w-[70vh] -mt-[24vh] md:-mt-[18vh] text-xs md:text-lg '>
+        <div className='w-[30vh] md:w-[70vh] -mt-[40vh] md:-mt-[18vh] text-xs md:text-lg '>
           <h1 className='flex flex-col'>Freelace.<span>Fullstak Developer
           </span>
  </h1>
