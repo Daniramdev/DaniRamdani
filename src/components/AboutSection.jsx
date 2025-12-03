@@ -125,7 +125,7 @@ const AboutSection = () => {
     return (
         <div
             ref={sectionRef}
-            className="md:h-[260vh] h-[550vh] relative" // Tambahkan relative
+            className="md:h-[260vh] h-[520vh] relative" // Tambahkan relative
             id="about"
             style={{
                 clipPath: clipPathValue,

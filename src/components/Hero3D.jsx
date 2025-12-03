@@ -78,7 +78,7 @@ const HeroSection = () => {
      <div className='md:w-[60vh] w-[40vh] text-xs'>
           <h1>I am ready to collaborate in designing and developing together to provide the best, modern, responsive and in accordance with the challenges of the times to meet your needs.</h1>
         </div>
-        <div className='w-[20vh] md:w-[80vh] -mt-[36vh] md:-mt-[18vh] text-xs md:text-lg md:right-0'>
+        <div className='w-[20vh] md:w-[80vh] -mt-[35vh] md:-mt-[18vh] text-xs md:text-lg md:right-0'>
           <h1 className='flex flex-col'>I'am Daniramdani.<span>Fullstak Developer
           </span>
  </h1>
