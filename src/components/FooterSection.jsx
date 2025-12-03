@@ -11,7 +11,7 @@ const FooterSession = () => {
   }, []);
 
   return (
-    <footer className=" container border-t py-4 border-b/30 mt-40 text-black/80">
+    <footer className="border-t py-4 border-b/30 mt-40 text-black/80">
       <div className=" items-center flex justify-center font-medium">
         {/* Top row */}
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-6">

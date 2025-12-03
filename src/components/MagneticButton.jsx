@@ -57,7 +57,7 @@ export default function MagneticButton({ children }) {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
       // Apply the styling here
-      className="absolute md:right-52 right-4 overflow-hidden  rounded-full md:h-32 md:w-32 w-20 h-20 font-sans border border-gray-500 cursor-pointer flex items-center justify-center will-change-transform"
+      className="absolute md:right-50 right-4 overflow-hidden  rounded-full md:h-24 md:w-24 w-24 h-24 font-sans border border-gray-500 cursor-pointer flex items-center justify-center will-change-transform"
     >
       {children}
     </div>

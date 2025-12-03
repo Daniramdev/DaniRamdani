@@ -16,7 +16,7 @@ const Navbar = () => {
 
  
   return (
-    <nav className="fixed w-full top-0 z-40">
+    <nav className="fixed w-full  z-40">
       <div className="container mx-auto flex justify-between items-center relative px-4">
         
         <div className="flex md:-translate-x-10 items-center  left-4 md:left-8 z-50">
@@ -43,14 +43,14 @@ const Navbar = () => {
         </div>
       </div>
       
-      <div className={`bg-[#DADBDF] top-0  z-40  -mt-20 backdrop-blur-sm w-full overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.33,1,0.68,1)] ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+      <div className={`bg-[#DADBDF] top-0  z-40 h-screen md:-mt-40 -mt-20 backdrop-blur-sm w-full overflow-hidden transition-all duration-700 ease-[cubic-bezier(0.33,1,0.68,1)] ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
         <div className="flex flex-col text-center md:text-6xl text-4xl gap-8 min-h-screen">
           <div className="flex-grow flex flex-col justify-center space-y-8 py-40">
             {navItems.map((item, index) => (
               <a 
                 key={item.id}
                 href={item.href} // Menggunakan href dari objek navItems
-                className="relative py-2 px-4 group font-medium text-black/80"
+                className="relative py-2 px-4 group font-medium text-black/40"
                 onClick={toggleMenu}
                 target={item.id === 'cv' ? "_blank" : "_self"} // Menambahkan target="_blank" untuk CV
                 rel={item.id === 'cv' ? "noopener noreferrer" : ""}

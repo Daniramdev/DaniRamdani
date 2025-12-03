@@ -10,7 +10,7 @@ import Services from './components/Service';
 
 const App = () => {
   return (
-    <div className="relative text-white">
+    <>
       <LoadingScreen /> {/* Letakkan komponen loading di sini */}
       
       <Navbar />
@@ -20,7 +20,7 @@ const App = () => {
       <ProjectsSection />
     
       <FooterSession />
-    </div>
+    </>
   );
 };
 

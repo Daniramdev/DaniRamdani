@@ -66,15 +66,15 @@ export default function Button({ children }) {
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="relative overflow-hidden rounded-full h-40 w-[100%] cursor-pointer flex items-center justify-center will-change-transform"
+      className="relative overflow-hidden rounded-full h-40 w-full cursor-pointer flex items-center justify-center will-change-transform"
     >
-      <p className="relative z-10 transition-colors duration-400 text-2xl text-black">
+      <p className="relative z-10 transition-colors duration-400 text-4xl text-black">
         {children}
       </p>
       <div
         ref={circleRef}
         style={{ backgroundColor: "#222222ff" }}
-        className="absolute w-[100%] h-80 rounded-full top-full transform z-0"
+        className="absolute w-[100%] h-75 rounded-full top-full transform z-0"
       ></div>
     </div>
   );

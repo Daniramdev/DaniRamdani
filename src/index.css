@@ -7,18 +7,18 @@
 /* Base Body Font */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #DADBDF;
+  background-color: #9E9E9E;
+  color: white;
   
 }
 body::-webkit-scrollbar {
   display: none;
 }
+
 .container {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
- 
+  padding: 10px 100px;
 }
+
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none; /* For Chrome, Safari, and Opera */
@@ -56,6 +56,36 @@ body::-webkit-scrollbar {
   font-size: 0.6rem; /* Adjust font size to fit */
   color: white;
   font-family: sans-serif;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden; /* Penting untuk menyembunyikan konten yang diduplikasi */
+  white-space: nowrap; 
+  display: flex; /* Membantu menjaga .marquee-text tetap di baris yang sama */
+}
+
+.marquee-text {
+  display: inline-block; /* PENTING: Agar elemen mengambil lebar konten yang diduplikasi */
+   position: relative;
+  animation: marquee 120s linear infinite; /* Animasi berjalan terus-menerus */
+}
+
+@keyframes marquee {
+  0% { 
+    transform: translateX(-50%); 
+  }
+  100% { 
+    /* Gerak Kanan ke Kiri (NEGATIF) untuk loop mulus */
+    transform: translateX(0%); 
+  }
+}
+
+@media (max-width:768px){
+  .container{
+    padding: 0;
+
+  }
 }
 
 @keyframes spin {
